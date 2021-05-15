@@ -5,6 +5,7 @@ import { getTokenFromUrl} from './spotify';
 import SpotifyWebbApi from 'spotify-web-api-js'	
 import Player from './Player'	
 import {useDataLayerValue} from '././DataLayer'	
+
 const spotify = new SpotifyWebbApi();	
 function App() {	
 const [{user, token}, dispatch] = useDataLayerValue();	
@@ -43,6 +44,7 @@ const [{user, token}, dispatch] = useDataLayerValue();
          <Login />	
       )	
     }	
+    
     	
     </div>	
   );	

@@ -1,3 +1,8 @@
+.body::-webkit-scrollbar {
+  /* hide the scrolebar but keep the functionality */
+  display: none;
+}
+
 * {
   margin: 0;
 }
