@@ -28,10 +28,17 @@ const reducer = (state, action) => {
         playlists: action.playlists,
       };
       
-    default:
-    return state;
-      
-}
+    
+     case "SET_DISCOVER_WEEKLY":
+      return {
+        ...state,
+        discover_weekly: action.discover_weekly,
+      };
+   default:
+      return state;
+  }
+};
+
 /*
     case "SET_PLAYING":
       return {
@@ -45,11 +52,7 @@ const reducer = (state, action) => {
         item: action.item,
       };
 
-    case "SET_DISCOVER_WEEKLY":
-      return {
-        ...state,
-        discover_weekly: action.discover_weekly,
-      };
+   
 
     case "SET_TOP_ARTISTS":
       return {
@@ -68,6 +71,6 @@ const reducer = (state, action) => {
    /*  
   
   } */
-}; 
+
 
 export default reducer;
